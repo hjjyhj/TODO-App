@@ -1,0 +1,16 @@
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+}
+  
+h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}

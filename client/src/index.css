@@ -15,7 +15,7 @@ body {
     margin-top: 50px;
 }
 
-.button-container {
+.button-container, .info-container {
     display: flex;
     align-items: center;
 }

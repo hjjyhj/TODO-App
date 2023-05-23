@@ -1,11 +1,24 @@
 import React, {useState} from 'react'
 
 const Modal = () => {
-
   const mode = 'create'
+  const editMode = mode === 'edit' ? true: false
+  const [data, setData] = useState({
+    user_email: "",
+    tilte: "",
+    progress: "",
+    date: editMode ? "" : new Date()
+  })
 
-  const handleChange = () => {
-    console.log('Changing')
+  const handleChange = (e) => {
+    console.log('Changing', e)
+    const {name, value } = e.target
+
+    setData(data => ({
+      ...data, 
+      [name] : value
+    }))
+    console.log(data)
   }
 
   return (

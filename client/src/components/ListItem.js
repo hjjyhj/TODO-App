@@ -2,7 +2,7 @@ import React from 'react'
 
 const ListItem = ({task}) => {
   return (
-    <div>
+    <div className="list-item">
       <p>{task.title}</p>
     </div>
   )

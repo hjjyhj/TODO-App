@@ -14,7 +14,7 @@ const Auth = () => {
   }
 
   const handlesubmit = async (e, endpoint) => {
-    email.preventDefault()
+    e.preventDefault()
     if (!isLogIn && password !== confirmPassword) {
       setError('Make sure password match')
       return
@@ -27,7 +27,12 @@ const Auth = () => {
     })
 
     const data = await response.json()
-    console.log(data)
+    if (data.detail) {
+      setError(data.detail)
+    } else {
+      setCookie('Email', data.email)
+      setCookie('AuthToken', data.token)
+    }
   }
   return (
 

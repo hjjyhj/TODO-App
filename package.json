@@ -8,6 +8,8 @@
     "client": "cd client && npm start"
   },
   "dependencies": {
-    "if-env": "^1.0.4"
+    "dotenv": "^16.3.1",
+    "if-env": "^1.0.4",
+    "mysql2": "^3.4.3"
   }
 }

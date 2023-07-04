@@ -16,7 +16,6 @@ const ProgressBar = ({progress}) => {
         className="inner-bar"
         style={{width: `${progress}%`, backgroundColor: randomColor}}
         >
-
       </div>
     </div>
   )
